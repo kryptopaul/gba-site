@@ -71,7 +71,7 @@ export function Banner() {
           <Button>Join us!</Button>
         </div>
       </div>
-      <h1>penis</h1>
+      <h1>test</h1>
     </div>
   );
 }
