@@ -5,11 +5,13 @@ import App from './App';
 import { MantineProvider } from '@mantine/core';
 
 
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme: 'dark'}} >
+  <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme: 'dark', primaryColor: 'orange'}} >
     <App />
   </MantineProvider>
 );
