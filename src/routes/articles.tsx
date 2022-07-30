@@ -1,23 +1,20 @@
-import React from 'react';
-import { Hero } from './Hero';
-import { Features } from './Features';
-import { Grid } from '@mantine/core';
-import { NewsCard } from './NewsCard';
-import { Container } from '@mantine/core';
-import { FooterSimple } from './FooterSimple';
-import { Button } from '@mantine/core';
-import { Banner } from './Banner';
-import { Link } from "react-router-dom";
+import { HeaderResponsive } from "../HeaderResponsive";
+import { Container } from "@mantine/core";
+import { Title } from "@mantine/core";
+import { Grid } from "@mantine/core";
+import { NewsCard } from "../NewsCard";
+import { FooterSimple } from "../FooterSimple";
 
+const headerLinks = [{link: 'https://example.com', label: 'Home'}, {link: 'https://example.com', label: 'FAQ'}, {link: 'https://example.com', label: 'Contact'}];
 const footerLinks: {link: string, label: string}[] = [{link: 'https://example.com', label: 'Home'}, {link: 'https://example.com', label: 'Join Us'}, {link: 'https://example.com', label: 'About'}, {link: 'https://example.com', label: 'Contact'}];
 
-function App() {
-  return (
-    <div className='App'>
-      <Hero/>
-      <Container>
-        <h1>Featured</h1>
-      <Grid>
+
+export default function Articles() {
+    return (
+        <Container>   
+            <HeaderResponsive links={headerLinks} />
+            <Title style={{marginBottom: '25px'}}>Articles</Title>
+            <Grid>
 
         <Grid.Col md={6} lg={4}>
           <NewsCard {...{title: 'Our strategy for blockchain-ising UoG', category: 'blockchain', image: 'https://www.gre.ac.uk/__data/assets/image/0025/119653/gre.jpg', link: 'https://example.com', author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
@@ -32,17 +29,7 @@ function App() {
           </Grid.Col>
 
       </Grid>
-      <div className='showMoreArticles' style={{textAlign: 'center', marginTop: '25px'}}>
-        <Link to='/articles'><Button variant="gradient" gradient={{ from: 'orange', to: 'red' }}>View all articles</Button></Link>
-      </div>
-      <div style={{marginTop: '-50px'}}>
-      <Features {...{title: 'Join our crypto-circle!', description: 'Feel free to join us - we welcome everyone interested in Web3!'}}/>
-      </div>
-      <Banner/>
-      </Container>
       <FooterSimple {...{links: footerLinks}} />
-    </div>
-  );
-}
-
-export default App;
+        </Container>     
+    );
+  }

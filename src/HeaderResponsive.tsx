@@ -90,6 +90,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
       key={link.label}
       href={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
+
       onClick={(event) => {
         event.preventDefault();
         setActive(link.link);
