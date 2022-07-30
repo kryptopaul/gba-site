@@ -1,4 +1,4 @@
-import { createStyles, Card, Image, ActionIcon, Group, Text, Avatar, Badge } from '@mantine/core';
+import { createStyles, Card, Image, Group, Text, Avatar, Badge } from '@mantine/core';
 
 
 const useStyles = createStyles((theme) => ({
@@ -38,7 +38,7 @@ export function NewsCard({
   category,
   link
 }: ArticleCardFooterProps) {
-  const { classes, theme } = useStyles();
+  const { classes } = useStyles();
 
   return (
 
