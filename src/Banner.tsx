@@ -1,5 +1,6 @@
 import { createStyles, Text, Title, Button } from '@mantine/core';
-
+import Lottie from 'react-lottie-player'
+import teamworkLottie from './lotties/teamwork.json'
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -71,7 +72,12 @@ export function Banner() {
           <Button>Join us!</Button>
         </div>
       </div>
-      <h1>test</h1>
+      <Lottie
+      loop
+      animationData={teamworkLottie}
+      play
+      
+    />
     </div>
   );
 }
