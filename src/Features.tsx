@@ -9,37 +9,44 @@ import {
   } from '@mantine/core';
   import { IconGauge, IconCookie, IconUser, IconMessage2, IconLock, TablerIcon } from '@tabler/icons';
   
-  export const MOCKDATA = [
-    {
-      icon: IconGauge,
-      title: 'Extreme performance',
-      description:
-        'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
-    },
+  export const featuresData = [
     {
       icon: IconUser,
-      title: 'Privacy focused',
+      title: 'Founded by Web3 enthusiasts',
       description:
-        'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+      "We're a group of 7 students from University of Greenwich passionate about Web3 and the opportunities it offers. We're here to help you learn about it and how to use it to your advantage.",
+    },
+    {
+      icon: IconGauge,
+      title: 'Solving real-world problems with Blockchain',
+      description:
+        'We take pride in finding problems and solving them with Blockchain. We are working with the most advanced technologies to make the world a better place.',
     },
     {
       icon: IconCookie,
-      title: 'No third parties',
+      title: "It's not always about the hype.",
       description:
-        'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
+        "We know that our industry is overwhelmed with hype and buzzwords. We'd like to show it from a different angle.",
     },
     {
       icon: IconLock,
-      title: 'Secure by default',
+      title: 'Regular meet-ups',
       description:
-        'Although it still can’t fly, its jumping power is outstanding, in Alola the mushrooms on Paras don’t grow up quite right',
+        "We're hosting regular meetups with our members to share our knowledge and experience. We're always looking for new members to join us.",
     },
     {
       icon: IconMessage2,
-      title: '24/7 Support',
+      title: 'Building awesome stuff',
       description:
-        'Rapidash usually can be seen casually cantering in the fields and plains, Skitty is known to chase around after its own tail',
+        "We're dedicated to building awesome stuff accross different blockchains and are continously expanding our portfolio.",
     },
+    {
+      icon: IconMessage2,
+      title: 'Keep up with the trends',
+      description:
+        "We're a perfect community to join if you're interested in keeping up with the latest Web3 industry news.",
+    }
+    
   ];
   
   interface FeatureProps {
@@ -73,7 +80,7 @@ import {
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
       fontWeight: 900,
       marginBottom: theme.spacing.md,
-      textAlign: 'center',
+      textAlign: 'left',
   
       [theme.fn.smallerThan('sm')]: {
         fontSize: 28,
@@ -82,7 +89,7 @@ import {
     },
   
     description: {
-      textAlign: 'center',
+      textAlign: 'left',
   
       [theme.fn.smallerThan('sm')]: {
         textAlign: 'left',
@@ -96,19 +103,17 @@ import {
     data?: FeatureProps[];
   }
   
-  export function Features({ title, description, data = MOCKDATA }: FeaturesGridProps) {
+  export function Features({ title, description, data = featuresData }: FeaturesGridProps) {
     const { classes, theme } = useStyles();
     const features = data.map((feature, index) => <Feature {...feature} key={index} />);
   
     return (
       <Container className={classes.wrapper}>
-        <Title className={classes.title}>{title}</Title>
-  
-        <Container size={560} p={0}>
+        <h1>{title}</h1>
           <Text size="sm" className={classes.description}>
             {description}
           </Text>
-        </Container>
+
   
         <SimpleGrid
           mt={60}
