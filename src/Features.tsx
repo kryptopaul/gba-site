@@ -1,7 +1,6 @@
 import {
     ThemeIcon,
     Text,
-    Title,
     Container,
     SimpleGrid,
     useMantineTheme,
