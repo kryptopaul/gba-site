@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { MantineProvider } from '@mantine/core';
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Articles from './routes/articles';
 import ScrollToTop from './ScrollToTop';
 import Article from './routes/article';
