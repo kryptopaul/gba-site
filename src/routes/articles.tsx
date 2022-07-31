@@ -5,8 +5,8 @@ import { Grid } from "@mantine/core";
 import { NewsCard } from "../NewsCard";
 import { FooterSimple } from "../FooterSimple";
 
-const headerLinks = [{link: 'https://example.com', label: 'Home'}, {link: 'https://example.com', label: 'FAQ'}, {link: 'https://example.com', label: 'Contact'}];
-const footerLinks: {link: string, label: string}[] = [{link: 'https://example.com', label: 'Home'}, {link: 'https://example.com', label: 'Join Us'}, {link: 'https://example.com', label: 'About'}, {link: 'https://example.com', label: 'Contact'}];
+const headerLinks = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join us'}];
+const footerLinks: {link: string, label: string}[] = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join Us'}, {link: '/', label: 'Contact'}];
 
 
 export default function Articles() {
