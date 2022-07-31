@@ -9,7 +9,8 @@ import { Button } from '@mantine/core';
 import { Banner } from './Banner';
 import { Link } from "react-router-dom";
 
-const footerLinks: {link: string, label: string}[] = [{link: 'https://example.com', label: 'Home'}, {link: 'https://example.com', label: 'Join Us'}, {link: 'https://example.com', label: 'About'}, {link: 'https://example.com', label: 'Contact'}];
+
+const footerLinks: {link: string, label: string}[] = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join Us'}, {link: '/', label: 'Contact'}];
 
 function App() {
   return (

@@ -63,7 +63,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-const headerLinks = [{link: 'https://google.com', label: 'Home'}, {link: 'https://google.com', label: 'FAQ'}, {link: 'https://google.com', label: 'Contact'}];
+const headerLinks = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join us'}];
 
 export function Hero() {
   const { classes } = useStyles();

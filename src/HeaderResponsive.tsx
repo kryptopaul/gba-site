@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { createStyles, Header, Container, Group, Burger, Paper, Transition } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-
+import { Link } from 'react-router-dom';
+import { Image } from '@mantine/core';
 
 const HEADER_HEIGHT = 60;
 
@@ -82,29 +83,23 @@ interface HeaderResponsiveProps {
 
 export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const [opened, { toggle, close }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <a
+    <Link to={link.link} style={{textDecoration: 'none'}}><a
       key={link.label}
       href={link.link}
-      className={cx(classes.link, { [classes.linkActive]: active === link.link })}
+      className={cx(classes.link)}
 
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-        close();
-      }}
     >
       {link.label}
-    </a>
+    </a></Link>
   ));
 
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
-        <h2>Greenwich Blockchain Association</h2>
+        <Link to='/'><Image src='https://i.imgur.com/e2jCBrD.png' style={{width: '175px'}} /></Link>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

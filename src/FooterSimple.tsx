@@ -1,5 +1,6 @@
 import { createStyles, Container, Group, Anchor } from '@mantine/core';
-
+import { Link } from 'react-router-dom';
+import { Image } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -35,20 +36,20 @@ interface FooterSimpleProps {
 export function FooterSimple({ links }: FooterSimpleProps) {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Anchor<'a'>
+    <Link to={link.link}><Anchor<'a'>
       color="dimmed"
       key={link.label}
       href={link.link}
       size="sm"
     >
       {link.label}
-    </Anchor>
+    </Anchor></Link>
   ));
 
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <h2>Greenwich Blockchain Association</h2>
+      <Link to='/'><Image src='https://i.imgur.com/e2jCBrD.png' style={{width: '175px'}} /></Link>
         <Group className={classes.links}>{items}</Group>
       </Container>
     </div>
