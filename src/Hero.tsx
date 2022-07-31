@@ -89,7 +89,7 @@ export function Hero() {
           Greenwich Blockchain Association has been founded by UoG students fascinated by the blockchain technology.
         </Text>
 
-        <Button variant="gradient" gradient={{ from: 'pink', to: 'yellow' }} size="xl" radius="xl" className={classes.control}>
+        <Button variant="gradient" gradient={{ from: 'pink', to: 'yellow' }} size="xl" className={classes.control}>
           Join us
         </Button>
       </Container>
