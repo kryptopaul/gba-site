@@ -60,7 +60,7 @@ export function Banner() {
   return (
     <div className={classes.wrapper}>
       <div className={classes.body}>
-        <Title className={classes.title}>How to join us?</Title>
+        <Title className={classes.title}>Ready to join us?</Title>
         <Text weight={500} size="lg" mb={5}>
           Sign up today via the Greenwich Students Union page.
         </Text>
