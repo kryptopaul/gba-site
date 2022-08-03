@@ -11,8 +11,9 @@ const footerLinks: {link: string, label: string}[] = [{link: '/', label: 'Home'}
 
 export default function Articles() {
     return (
-        <Container>   
+      <div>
             <HeaderResponsive links={headerLinks} />
+        <Container>   
             <Title style={{marginBottom: '25px'}}>Articles</Title>
             <Grid>
 
@@ -30,7 +31,8 @@ export default function Articles() {
           
 
       </Grid>
+        </Container>   
       <FooterSimple {...{links: footerLinks}} />
-        </Container>     
+        </div>  
     );
   }
