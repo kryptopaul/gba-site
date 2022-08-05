@@ -136,6 +136,24 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
     >
       {'Home'}
     </a></Link>
+    <Link to={"/articles"} style={{textDecoration: 'none'}}><a
+      key={"Articles"}
+      href={"/articles"}
+      className={cx(classes.link)}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {'Articles'}
+    </a></Link>
+    <a
+      key={"Join"}
+      href={"https://www.greenwichsu.co.uk/societies/14182/"}
+      className={cx(classes.link)}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {'Join'}
+    </a>
             </Paper>
           )}
         </Transition>
