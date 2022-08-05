@@ -84,23 +84,42 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   const [opened, { toggle }] = useDisclosure(false);
   const { classes, cx } = useStyles();
 
-  const items = links.map((link) => (
-    <Link to={link.link} style={{textDecoration: 'none'}}><a
-      key={link.label}
-      href={link.link}
-      className={cx(classes.link)}
 
-    >
-      {link.label}
-    </a></Link>
-  ));
 
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
+        
         <Link to='/'><Image src='https://i.imgur.com/e2jCBrD.png' style={{width: '175px'}} /></Link>
         <Group spacing={5} className={classes.links}>
-          {items}
+        <Link to={"/"} style={{textDecoration: 'none'}}><a
+        rel="noreferrer"
+      key={"Home"}
+      href={"/"}
+      className={cx(classes.link)}
+      target="_blank"
+    >
+      {'Home'}
+    </a></Link>
+    <Link to={"/articles"} style={{textDecoration: 'none'}}><a
+      key={"Articles"}
+      href={"/articles"}
+      className={cx(classes.link)}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {'Articles'}
+    </a></Link>
+    <a
+      key={"Join"}
+      href={"https://www.greenwichsu.co.uk/societies/14182/"}
+      className={cx(classes.link)}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {'Join'}
+    </a>
+
         </Group>
 
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
@@ -108,7 +127,15 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
-              {items}
+                      <Link to={"/"} style={{textDecoration: 'none'}}><a
+      key={"Home"}
+      href={"/"}
+      className={cx(classes.link)}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {'Home'}
+    </a></Link>
             </Paper>
           )}
         </Transition>

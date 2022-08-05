@@ -1,4 +1,4 @@
-import { createStyles, Container, Group, Anchor } from '@mantine/core';
+import { createStyles, Container, Group } from '@mantine/core';
 import { Link } from 'react-router-dom';
 import { Image } from '@mantine/core';
 
@@ -16,6 +16,7 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
+    
 
     [theme.fn.smallerThan('xs')]: {
       flexDirection: 'column',
@@ -23,10 +24,16 @@ const useStyles = createStyles((theme) => ({
   },
 
   links: {
+    
+    textDecoration: 'none',
     [theme.fn.smallerThan('xs')]: {
       marginTop: theme.spacing.md,
     },
   },
+  link : {
+    color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[7],
+    textDecoration: 'none',
+  }
 }));
 
 interface FooterSimpleProps {
@@ -35,22 +42,40 @@ interface FooterSimpleProps {
 
 export function FooterSimple({ links }: FooterSimpleProps) {
   const { classes } = useStyles();
-  const items = links.map((link) => (
-    <Link to={link.link}><Anchor<'a'>
-      color="dimmed"
-      key={link.label}
-      href={link.link}
-      size="sm"
-    >
-      {link.label}
-    </Anchor></Link>
-  ));
+
 
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
       <Link to='/'><Image src='https://i.imgur.com/e2jCBrD.png' style={{width: '175px'}} /></Link>
-        <Group className={classes.links}>{items}</Group>
+      <Group className={classes.links}>
+      <Link to={"/"} style={{textDecoration: 'none'}}><a
+      key={"Home"}
+      href={"/"}
+      target="_blank"
+      className={classes.link}
+      rel="noreferrer"
+    >
+      {'Home'}
+    </a></Link>
+    <Link to={"/articles"} style={{textDecoration: 'none'}}><a
+      key={"Articles"}
+      href={"/articles"}
+      className={classes.link}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {'Articles'}
+    </a></Link>
+    <a
+      key={"Join"}
+      href={"https://www.greenwichsu.co.uk/societies/14182/"}
+      className={classes.link}
+      rel="noreferrer"
+      target="_blank"
+    >
+      {'Join'}
+    </a></Group>
       </Container>
     </div>
   );

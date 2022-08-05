@@ -69,7 +69,7 @@ export function Banner() {
         </Text>
 
         <div className={classes.controls}>
-          <Button>Join us!</Button>
+          <Button component='a' href='https://www.greenwichsu.co.uk/societies/14182/' target={"_blank"}>Join us!</Button>
         </div>
       </div>
       <Lottie

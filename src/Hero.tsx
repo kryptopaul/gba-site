@@ -63,7 +63,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-const headerLinks = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join us'}];
+const headerLinks = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: 'https://www.greenwichsu.co.uk/societies/14182/', label: 'Join us'}];
 
 export function Hero() {
   const { classes } = useStyles();
@@ -89,7 +89,7 @@ export function Hero() {
           Greenwich Blockchain Association has been founded by UoG students fascinated by the blockchain technology.
         </Text>
 
-        <Button variant="gradient" gradient={{ from: 'pink', to: 'yellow' }} size="xl" className={classes.control}>
+        <Button component='a' href='https://www.greenwichsu.co.uk/societies/14182/' target={"_blank"} variant="gradient" gradient={{ from: 'pink', to: 'yellow' }} size="xl" className={classes.control}>
           Join us
         </Button>
       </Container>
