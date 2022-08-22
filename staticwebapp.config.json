@@ -1,6 +1,7 @@
 {
     "responseOverrides": {
       "404": {
+        "statusCode": 200,
         "rewrite": "/"
       }
     }
