@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <MantineProvider withGlobalStyles withNormalizeCSS theme={{colorScheme: 'dark', primaryColor: 'orange'}} >
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<App />} />
