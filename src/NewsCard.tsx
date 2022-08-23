@@ -23,7 +23,7 @@ interface ArticleCardFooterProps {
   image: string;
   category: string;
   title: string;
-  link: string;
+  link: any;
   author: {
     name: string;
     description: string;
@@ -42,7 +42,7 @@ export function NewsCard({
 
   return (
 
-    <Card component='a' withBorder p="lg" radius="md" className={classes.card} href={link} target='_blank'>
+    <Card component='a' withBorder p="lg" radius="md" className={classes.card} href={link}>
       <Card.Section mb="sm">
         <Image src={image} alt={title} height={180} />
       </Card.Section>

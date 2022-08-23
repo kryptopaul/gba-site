@@ -10,6 +10,7 @@ import { Banner } from './Banner';
 import { Link } from "react-router-dom";
 
 
+
 const footerLinks: {link: string, label: string}[] = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join Us'}, {link: '/', label: 'Contact'}];
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
         </Grid.Col>
 
           <Grid.Col md={6} lg={4}>
-            <NewsCard {...{title: 'Building a transparent merch store with Polygon', category: 'polygon', image: 'https://i.imgur.com/CJNRmnv.png', link: 'https://example.com', author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
+            <Link to='/article/polygon-store' style={{textDecoration: 'none'}}>
+            <NewsCard {...{title: 'Building a transparent merch store with Polygon', category: 'polygon', image: 'https://i.imgur.com/CJNRmnv.png', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
+            </Link>
           </Grid.Col>
 
       </Grid>
