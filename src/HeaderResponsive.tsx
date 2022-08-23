@@ -92,24 +92,20 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         
         <Link to='/'><Image src='https://i.imgur.com/e2jCBrD.png' style={{width: '175px'}} /></Link>
         <Group spacing={5} className={classes.links}>
-        <Link to={"/"} style={{textDecoration: 'none'}}><a
-        rel="noreferrer"
+          
+      <Link to={"/"} style={{textDecoration: 'none'}}
       key={"Home"}
-      href={"/"}
       className={cx(classes.link)}
-      target="_blank"
     >
       {'Home'}
-    </a></Link>
-    <Link to={"/articles"} style={{textDecoration: 'none'}}><a
+    </Link>
+
+    <Link to={"/articles"} style={{textDecoration: 'none'}}
       key={"Articles"}
-      href={"/articles"}
       className={cx(classes.link)}
-      target="_blank"
-      rel="noreferrer"
     >
       {'Articles'}
-    </a></Link>
+   </Link>
     <a
       key={"Join"}
       href={"https://www.greenwichsu.co.uk/societies/14182/"}
@@ -127,24 +123,23 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
-                      <Link to={"/"} style={{textDecoration: 'none'}}><a
+                      <Link to={"/"} style={{textDecoration: 'none'}}
       key={"Home"}
-      href={"/"}
+
       className={cx(classes.link)}
-      target="_blank"
-      rel="noreferrer"
+
     >
       {'Home'}
-    </a></Link>
-    <Link to={"/articles"} style={{textDecoration: 'none'}}><a
+</Link>
+
+    <Link to={"/articles"} style={{textDecoration: 'none'}}
       key={"Articles"}
-      href={"/articles"}
+
       className={cx(classes.link)}
-      target="_blank"
-      rel="noreferrer"
+
     >
       {'Articles'}
-    </a></Link>
+</Link>
     <a
       key={"Join"}
       href={"https://www.greenwichsu.co.uk/societies/14182/"}

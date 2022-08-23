@@ -49,30 +49,28 @@ export function FooterSimple({ links }: FooterSimpleProps) {
       <Container className={classes.inner}>
       <Link to='/'><Image src='https://i.imgur.com/e2jCBrD.png' style={{width: '175px'}} /></Link>
       <Group className={classes.links}>
-      <Link to={"/"} style={{textDecoration: 'none'}}><a
+      <Link to={"/"} style={{textDecoration: 'none'}}
       key={"Home"}
-      href={"/"}
-      target="_blank"
+
+
       className={classes.link}
-      rel="noreferrer"
+
     >
       {'Home'}
-    </a></Link>
-    <Link to={"/articles"} style={{textDecoration: 'none'}}><a
+</Link>
+    <Link to={"/articles"} style={{textDecoration: 'none'}}
       key={"Articles"}
-      href={"/articles"}
+
       className={classes.link}
-      target="_blank"
-      rel="noreferrer"
+
     >
       {'Articles'}
-    </a></Link>
+ </Link>
     <a
       key={"Join"}
       href={"https://www.greenwichsu.co.uk/societies/14182/"}
       className={classes.link}
-      rel="noreferrer"
-      target="_blank"
+
     >
       {'Join'}
     </a></Group>

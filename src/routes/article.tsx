@@ -15,19 +15,24 @@ const footerLinks: {link: string, label: string}[] = [{link: '/', label: 'Home'}
 export default function Article() {   
 
     const params = useParams();
-    console.log(params)
 
     const [article, setArticle] = useState<any>();
 
+    useEffect(() => {
+        loadArticle(params.id);
+    }, [params.id]);
+
     async function loadArticle(id:any) {
+        try{
         const response = await fetch(`https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}.md`);
         const responseText = await response.text();
         setArticle(responseText);
+        } catch (error) {
+            console.log(error)
+        }
     }
 
-    useEffect(() => {
-        loadArticle(params.id);
-    } , []);
+
 
     return (
         <>
