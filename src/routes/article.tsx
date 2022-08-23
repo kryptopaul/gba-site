@@ -28,11 +28,11 @@ export default function Article() {
     async function loadArticle(id:any) {
         try{
         // Fetch article
-        const response = await fetch(`https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}.md`);
+        const response = await fetch(`https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}/${id}.md`);
         const responseText = await response.text();
 
         // Fetch image
-        const image = `https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}.png`;
+        const image = `https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}/${id}.png`;
         setLoading("none");
         setImage(image);
         setArticle(responseText);
