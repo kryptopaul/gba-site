@@ -45,13 +45,17 @@ export default function Article() {
         return <a href={props.href} target="_blank" rel="noreferrer" style={{color: "white", textDecoration: "underline"}}>{props.children}</a>
       }
 
+    function ImageRenderer(props:any) {
+        return <Image style={{width: '100%'}} src={props.src} />
+    }
+
     return (
         <>
         <HeaderResponsive links={headerLinks} />
         <Container>   
             <Loader style={{display: loading}} color="orange" size="xl" />
             <Image src={image}  />
-            <ReactMarkdown components={{a: LinkRenderer}} className="markdown" children={article}></ReactMarkdown>
+            <ReactMarkdown components={{a: LinkRenderer, img: ImageRenderer}} className="markdown" children={article}></ReactMarkdown>
         </Container>     
         <FooterSimple {...{links: footerLinks}} />
         </>
