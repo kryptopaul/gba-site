@@ -7,6 +7,7 @@ import { Loader } from '@mantine/core';
 import { useEffect, useState } from "react";
 import { Image } from "@mantine/core";
 
+
 const headerLinks = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join us'}];
 const footerLinks: {link: string, label: string}[] = [{link: '/', label: 'Home'}, {link: '/articles', label: 'Articles'}, {link: '/', label: 'Join Us'}, {link: '/', label: 'Contact'}];
 
@@ -40,7 +41,9 @@ export default function Article() {
         }
     }
 
-    
+    function LinkRenderer(props:any) {
+        return <a href={props.href} target="_blank" rel="noreferrer" style={{color: "white", textDecoration: "underline"}}>{props.children}</a>
+      }
 
     return (
         <>
@@ -48,7 +51,7 @@ export default function Article() {
         <Container>   
             <Loader style={{display: loading}} color="orange" size="xl" />
             <Image src={image}  />
-            <ReactMarkdown children={article}></ReactMarkdown>
+            <ReactMarkdown components={{a: LinkRenderer}} className="markdown" children={article}></ReactMarkdown>
         </Container>     
         <FooterSimple {...{links: footerLinks}} />
         </>
