@@ -17,6 +17,7 @@ export default function Article() {
     const params = useParams();
 
     const [article, setArticle] = useState<any>();
+    const [loading, setLoading] = useState<string>("block");
 
     useEffect(() => {
         loadArticle(params.id);
@@ -26,6 +27,7 @@ export default function Article() {
         try{
         const response = await fetch(`https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}.md`);
         const responseText = await response.text();
+        setLoading("none");
         setArticle(responseText);
         } catch (error) {
             console.log(error)
@@ -38,8 +40,7 @@ export default function Article() {
         <>
         <HeaderResponsive links={headerLinks} />
         <Container>   
-            <Title style={{marginBottom: '25px'}}>{"This is Article with ID: " + params.id}</Title>
-            <Loader color="orange" size="xl" />
+            <Loader style={{display: loading}} color="orange" size="xl" />
             <ReactMarkdown children={article}></ReactMarkdown>
         </Container>     
         <FooterSimple {...{links: footerLinks}} />
