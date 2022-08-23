@@ -1,6 +1,5 @@
 import { HeaderResponsive } from "../HeaderResponsive";
 import { Container } from "@mantine/core";
-import { Title } from "@mantine/core";
 import { FooterSimple } from "../FooterSimple";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
