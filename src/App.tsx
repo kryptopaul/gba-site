@@ -45,7 +45,7 @@ function App() {
         <Link to='/articles'><Button variant="gradient" gradient={{ from: 'orange', to: 'red' }}>View all articles</Button></Link>
       </div>
       <div style={{marginTop: '-50px'}}>
-      <Features {...{title: 'Join our crypto-circle!', description: 'Feel free to join us - we welcome everyone interested in Web3!'}}/>
+      <Features {...{title: 'About us', description: "Whether you're a newbie or a seasoned crypto-native, you'll find something for yourself."}}/>
       </div>
       <Banner/>
       </Container>

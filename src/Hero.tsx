@@ -86,7 +86,7 @@ export function Hero() {
                 Blockchain
               </Text>{' '} <br/> at Greenwich!</Title>
         <Text className={classes.description} size="xl" mt="xl">
-          Greenwich Blockchain Association has been founded by UoG students fascinated by the blockchain technology.
+          We're a group of students sharing a passion for blockchain and the technology behind it.
         </Text>
 
         <Button component='a' href='https://www.greenwichsu.co.uk/societies/14182/' target={"_blank"} variant="gradient" gradient={{ from: 'pink', to: 'yellow' }} size="xl" className={classes.control}>

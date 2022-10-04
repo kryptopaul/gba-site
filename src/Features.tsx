@@ -6,41 +6,41 @@ import {
     useMantineTheme,
     createStyles,
   } from '@mantine/core';
-  import { IconGauge, IconCookie, IconUser, IconMessage2, IconLock, TablerIcon } from '@tabler/icons';
+  import { IconUser, IconMessage2, TablerIcon, IconUsers, IconSchool, IconConfetti, IconTicket, IconNews } from '@tabler/icons';
   
   export const featuresData = [
     {
       icon: IconUser,
       title: 'Founded by Web3 enthusiasts',
       description:
-      "We're a group of 7 students from University of Greenwich passionate about Web3 and the opportunities it offers. We're here to help you learn about it and how to use it to your advantage.",
+      "We're a group of students from University of Greenwich passionate about Web3. We're here to help you learn about it and how to use it to your advantage.",
     },
     {
-      icon: IconGauge,
-      title: 'Solving real-world problems with Blockchain',
+      icon: IconUsers,
+      title: 'An awesome community of students',
       description:
-        'We take pride in finding problems and solving them with Blockchain. We are working with the most advanced technologies to make the world a better place.',
+        "We're aiming to grow a friendly community of students who share a common interest in blockchain and the technology behind it.",
     },
     {
-      icon: IconCookie,
+      icon: IconConfetti,
       title: "It's not always about the hype.",
       description:
-        "We know that our industry is overwhelmed with hype and buzzwords. We'd like to show it from a different angle.",
+        "We know that our industry is overwhelmed with hype and buzzwords. We'd like to show it from a different, more professional angle.",
     },
     {
-      icon: IconLock,
-      title: 'Regular meet-ups',
+      icon: IconSchool,
+      title: 'Regular meet-ups and workshops',
       description:
-        "We're hosting regular meetups with our members to share our knowledge and experience. We're always looking for new members to join us.",
+        "We're hosting regular meetups with our members to share our knowledge and experience. Are you a developer? Join us for our Solidity workshops!",
     },
     {
-      icon: IconMessage2,
-      title: 'Building awesome stuff',
+      icon: IconTicket,
+      title: 'NFT membership passes.',
       description:
-        "We're dedicated to building awesome stuff accross different blockchains and are continously expanding our portfolio.",
+        "Our membership passes are distributed as NFTs. You can use them to prove your membership and get access to our events.",
     },
     {
-      icon: IconMessage2,
+      icon: IconNews,
       title: 'Keep up with the trends',
       description:
         "We're a perfect community to join if you're interested in keeping up with the latest Web3 industry news.",
