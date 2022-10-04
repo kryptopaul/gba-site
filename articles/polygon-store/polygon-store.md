@@ -2,6 +2,9 @@
 
 ### Author: Paul Lechocki
 
+## Introduction
+These are notes I wrote upon building a concept of a merchandise store for our society. Although the store is NOT currently accepting orders, a testnet version at Polygon Mumbai can be accessed [here.](https://store.greblockchain.co.uk/)
+
 ## Inspiration
 While creating a store for Greenwich Blockchain Association, I came up with an idea of using blockchain to donate a % from each sale. From my own experience, many online stores claim to donate a part of their sales, but in this case the customers have to rely on the 3rd party to do it.
 
