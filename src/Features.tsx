@@ -6,7 +6,7 @@ import {
     useMantineTheme,
     createStyles,
   } from '@mantine/core';
-  import { IconUser, IconMessage2, TablerIcon, IconUsers, IconSchool, IconConfetti, IconTicket, IconNews } from '@tabler/icons';
+  import { IconUser, TablerIcon, IconUsers, IconSchool, IconConfetti, IconTicket, IconNews } from '@tabler/icons';
   
   export const featuresData = [
     {
