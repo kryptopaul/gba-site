@@ -13,7 +13,7 @@ import {
       icon: IconUser,
       title: 'Founded by Web3 enthusiasts',
       description:
-      "We're a group of students from University of Greenwich passionate about Web3. We're here to help you learn about it and how to use it to your advantage.",
+      "We're a group of students from University of Greenwich passionate about Web3. We're here to exchange our knowledge and experience with our members and broaden our horizons together.",
     },
     {
       icon: IconUsers,
@@ -31,7 +31,7 @@ import {
       icon: IconSchool,
       title: 'Regular meet-ups and workshops',
       description:
-        "We're hosting regular meetups with our members to share our knowledge and experience. Are you a developer? Join us for our Solidity workshops!",
+        "We're hosting regular meetups with our members to discuss new trends and ideas. Are you a developer? Join us for our Solidity workshops!",
     },
     {
       icon: IconTicket,

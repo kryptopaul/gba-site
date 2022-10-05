@@ -23,7 +23,7 @@ function App() {
 
 <Grid.Col md={6} lg={4}>
 <Link to='/article/coming-soon' style={{textDecoration: 'none'}}>
-  <NewsCard {...{title: 'Our strategy for blockchain-ising UoG', category: 'blockchain', image: 'https://www.gre.ac.uk/__data/assets/image/0025/119653/gre.jpg', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
+  <NewsCard {...{title: 'Leveraging blockchain in student societies', category: 'blockchain', image: 'https://www.gre.ac.uk/__data/assets/image/0025/119653/gre.jpg', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
   </Link>
 </Grid.Col>
 
