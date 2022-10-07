@@ -25,7 +25,7 @@ export default function Articles() {
         </Grid.Col>
 
         <Grid.Col md={6} lg={4}>
-        <Link to='/article/coming-soon' style={{textDecoration: 'none'}}>         
+        <Link to='/article/signups-open' style={{textDecoration: 'none'}}>         
           <NewsCard {...{title: 'Greenwich Blockchain Association sign-ups are open!', category: 'Ethereum', image: 'https://bitcoin.pl/wp-content/uploads/2022/03/ethereum-pos.jpg', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
           </Link>
         </Grid.Col>
