@@ -23,9 +23,9 @@ import {
     },
     {
       icon: IconConfetti,
-      title: "It's not always about the hype.",
+      title: 'Free from "hype" and bad actors',
       description:
-        "We know that our industry is overwhelmed with hype and buzzwords. We'd like to show it from a different, more professional angle.",
+        "We know that our industry has a problem with bad actors who sadly make the public opinion mistrust it. We'd like to show it from a different, more professional angle.",
     },
     {
       icon: IconSchool,
