@@ -55,7 +55,7 @@ export default function Article() {
         <Container>   
             <Loader style={{display: loading}} color="orange" size="xl" />
             {/* 250px on all images in articles */}
-            <Image src={image} style={{height: '250px'}} />
+            <Image src={image} height={'250px'}/>
             <ReactMarkdown components={{a: LinkRenderer, img: ImageRenderer}} className="markdown" children={article}></ReactMarkdown>
         </Container>     
         <FooterSimple {...{links: footerLinks}} />
