@@ -1,4 +1,6 @@
 # Greenwich Blockchain Association - Homepage
 
-The site is accessible [here.](https://greblockchain.co.uk).
+Website for my school's blockchain group.
+
+The site is accessible [here.](https://greblockchain.co.uk)
 
