@@ -25,7 +25,7 @@ import {
       icon: IconConfetti,
       title: 'Free from "hype" and bad actors',
       description:
-        "We know that our industry has a problem with bad actors who sadly make the public opinion mistrust it. We'd like to show it from a different, more professional angle.",
+        "Blockchain industry is often perceived with a negative sentiment thanks to various bad actors. Our goal is to change that.",
     },
     {
       icon: IconSchool,
