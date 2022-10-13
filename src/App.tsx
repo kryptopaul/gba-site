@@ -22,8 +22,8 @@ function App() {
         <Grid>
 
 <Grid.Col md={6} lg={4}>
-<Link to='/article/coming-soon' style={{textDecoration: 'none'}}>
-  <NewsCard {...{title: 'Leveraging blockchain in student societies', category: 'blockchain', image: 'https://www.gre.ac.uk/__data/assets/image/0025/119653/gre.jpg', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
+  <Link to='/article/blockchain-student-groups' style={{textDecoration: 'none'}}>
+    <NewsCard {...{title: 'Using blockchain in student societies', category: 'blockchain', image: 'https://i.imgur.com/8ueUFdG.png', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/MlliW1v.png', description:'Founder'}}} />
   </Link>
 </Grid.Col>
 

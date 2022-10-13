@@ -28,11 +28,11 @@ export default function Article() {
     async function loadArticle(id:any) {
         try{
         // Fetch article
-        const response = await fetch(`https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}/${id}.md`);
+        const response = await fetch(`/articles/${id}/${id}.md`);
         const responseText = await response.text();
 
         // Fetch image
-        const image = `https://raw.githubusercontent.com/kryptopaul/gba-site/master/articles/${id}/${id}.png`;
+        const image = `/articles/${id}/${id}.png`;
         setLoading("none");
         setImage(image);
         setArticle(responseText);
@@ -55,7 +55,7 @@ export default function Article() {
         <Container>   
             <Loader style={{display: loading}} color="orange" size="xl" />
             {/* 250px on all images in articles */}
-            <Image src={image} height={'250px'}/>
+            <Image src={image} height={'250px'} radius={'md'} fit={'cover'} />
             <ReactMarkdown components={{a: LinkRenderer, img: ImageRenderer}} className="markdown" children={article}></ReactMarkdown>
         </Container>     
         <FooterSimple {...{links: footerLinks}} />
