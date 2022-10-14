@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Working on a student-led blockchain project gives us plenty opportunities to step away from the default Web2 standards and explore the new possibilities that blockchain technology offers. In this article, I will share my experience of implementing blockchain in a student-led group.
+Working on a student-led blockchain project gives us plenty opportunities to step away from the default Web2 standards and explore the new possibilities that blockchain technology offers. In this article, I will share our plans to implement blockchain in a student-led group.
 
 ## Membership passes
 
