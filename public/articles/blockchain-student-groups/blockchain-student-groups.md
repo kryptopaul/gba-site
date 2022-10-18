@@ -10,7 +10,7 @@ Working on a student-led blockchain project gives us plenty opportunities to ste
 
 The usual way of confirming a membership to a student society is to be registered through the Students Union website. While it allows to verify the identity of each applicant and to keep track of the members, it also has some drawbacks. The most important one is that it is not decentralized and the members are not in full control of their data. At any point, the database keeping track of the members could potentially be compromised and the data could be lost.
 
-To solve this problem, on top of the standard procedure, we decided to implement a NFT-based membership pass system. The idea is to create a membership pass for each member of the society. The pass is a non-fungible token (NFT) that is stored on the Ethereum blockchain. The token will be distributed by the society's smart contract and can be verified by anyone. The token is also visible in the member's wallet, so they can easily access it and show it to anyone.
+To solve this problem, on top of the standard procedure, we decided to implement a NFT-based membership pass system. The tokenized passes will be distributed by the society's smart contract and can be verified by anyone. The token will also visible in the member's wallet, so they can easily access it and show it to anyone.
 
 The token's metadata will be stored using IPFS - a decentralized storage system. This is done to ensure a 100% uptime of the data which would not be possible while using a centralized solution. Additionally, it will not be possible for anyone to tamper with the data.
 
