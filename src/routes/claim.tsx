@@ -39,7 +39,7 @@ export function Claim () {
 
 
 
-    const wss = new WebSocket('ws://4.234.25.202:8080');
+    const wss = new WebSocket('wss://4.234.25.202:8080');
 
     wss.onopen = () => {
         console.log('connected');
