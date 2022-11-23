@@ -169,7 +169,7 @@ export function Claim () {
             >
         {notificationMessage}
         <br/>
-        <a style={{color: 'white', display: displayNFTLink}} href={`https://testnets.opensea.io/${address}`} target="_blank" rel="noreferrer" >Check out your NFT on OpenSea!</a>
+        <a style={{color: 'white', display: displayNFTLink}} href={`https://opensea.io/${address}`} target="_blank" rel="noreferrer" >Check out your NFT on OpenSea!</a>
         </Notification>
         <Progress color={selectedDesign} style={{display: displayProgress}} value={progress} animate />
         </div>
