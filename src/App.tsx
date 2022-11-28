@@ -20,7 +20,11 @@ function App() {
       <Container>
         <h1>Featured</h1>
         <Grid>
-
+        <Grid.Col md={6} lg={4}>
+        <Link to='/article/discord' style={{textDecoration: 'none'}}>
+          <NewsCard {...{title: 'How to join our Discord server? (for dummies)', category: 'discord', image: '/articles/discord/discord.png', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/ud7Sw6s.png', description:'Founder'}}} />
+          </Link>
+        </Grid.Col>
 <Grid.Col md={6} lg={4}>
   <Link to='/article/blockchain-student-groups' style={{textDecoration: 'none'}}>
     <NewsCard {...{title: 'Using blockchain in student societies', category: 'blockchain', image: 'https://i.imgur.com/8ueUFdG.png', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/ud7Sw6s.png', description:'Founder'}}} />
@@ -33,11 +37,7 @@ function App() {
   </Link>
 </Grid.Col>
 
-<Grid.Col md={6} lg={4}>
-    <Link to='/article/polygon-store' style={{textDecoration: 'none'}}>
-    <NewsCard {...{title: 'Building a transparent merch store with Polygon', category: 'polygon', image: 'https://i.imgur.com/CJNRmnv.png', link: null, author: {name: 'Paul Lechocki', image: 'https://i.imgur.com/ud7Sw6s.png', description:'Founder'}}} />
-    </Link>
-  </Grid.Col>
+
   
 
 </Grid>
