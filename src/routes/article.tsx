@@ -46,6 +46,9 @@ export default function Article() {
       }
 
     function ImageRenderer(props:any) {
+        if (params.id === 'discord') {
+            return <Image style={{width: '250px'}} src={props.src} />
+        }
         return <Image style={{width: '100%'}} src={props.src} />
     }
 
