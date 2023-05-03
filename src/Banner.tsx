@@ -65,7 +65,7 @@ export function Banner() {
           Sign up today via the Greenwich Students Union page.
         </Text>
         <Text size="sm" color="dimmed">
-          You will receive further instructions about claiming our free NFT Membership Pass via your university email. <br/> See you on the other side!
+          You will receive further instructions about claiming our free NFT Membership Pass via your university email.
         </Text>
 
         <div className={classes.controls}>
